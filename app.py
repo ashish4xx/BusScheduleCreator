@@ -291,7 +291,7 @@ for i in range(num_routes):
     ac_type = st.selectbox(f'Is route {i + 1} AC or Non-AC?', ['Non-AC', 'AC'])
 
     if stop_names and start_time and end_time:
-        num_time_zones = st.number_input(f'Enter number of time schedule zones for route {i + 1}', min_value=1, max_value=5, value=1, step=1)
+        num_time_zones = st.number_input(f'Enter number of time schedule zones for route {i + 1}', min_value=1, value=1, step=1)
 
         time_schedule_zones = []
         for tz in range(num_time_zones):
